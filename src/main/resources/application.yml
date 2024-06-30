@@ -25,5 +25,12 @@ spring:
       hibernate:
         format_sql: true
 
+  cloud:
+    openfeign:
+      client:
+        config:
+          nbrb-currency-client:
+            url: https://api.nbrb.by/exrates/rates?periodicity=0
+
   liquibase:
     change-log: db/changelog/changelog-master.xml
