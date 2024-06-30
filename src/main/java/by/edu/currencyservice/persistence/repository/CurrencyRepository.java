@@ -11,4 +11,6 @@ import java.util.Optional;
 public interface CurrencyRepository extends JpaRepository<Currency, Long> {
 
     Optional<Currency> findByCodeAndDate(String code, LocalDate date);
+
+    boolean existsByDate(LocalDate date);
 }

@@ -24,6 +24,9 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        order_inserts: true
+        jdbc:
+          batch_size: 31
 
   cloud:
     openfeign:
