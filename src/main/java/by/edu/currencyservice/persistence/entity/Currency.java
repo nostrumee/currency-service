@@ -15,7 +15,7 @@ import java.time.LocalDate;
 public class Currency {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator= "seq_pk")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_pk")
     @SequenceGenerator(name="seq_pk", sequenceName= "primary_key_seq", allocationSize = 1)
     private Long id;
 

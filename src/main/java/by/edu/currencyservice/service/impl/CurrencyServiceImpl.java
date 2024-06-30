@@ -4,7 +4,7 @@ import by.edu.currencyservice.client.NbrbCurrencyClient;
 import by.edu.currencyservice.dto.response.CurrencyApiResponse;
 import by.edu.currencyservice.dto.response.CurrencyResponse;
 import by.edu.currencyservice.dto.response.FetchingResultResponse;
-import by.edu.currencyservice.exception.CurrencyDataIsAlreadyFetchedException;
+import by.edu.currencyservice.exception.CurrencyDataAlreadyFetchedException;
 import by.edu.currencyservice.exception.CurrencyDataNotFoundException;
 import by.edu.currencyservice.mapper.CurrencyMapper;
 import by.edu.currencyservice.persistence.entity.Currency;
@@ -67,7 +67,7 @@ public class CurrencyServiceImpl implements CurrencyService {
             log.info("Currency data for the date {} is already fetched", date);
 
             String formattedDate = formatLocalDate(date);
-            throw new CurrencyDataIsAlreadyFetchedException(formattedDate);
+            throw new CurrencyDataAlreadyFetchedException(formattedDate);
         }
     }
 
