@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
 public record CurrencyApiResponse(
+
         @JsonProperty("Date")
         LocalDate date,
 
