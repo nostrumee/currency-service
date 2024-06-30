@@ -15,4 +15,6 @@ public final class Messages {
             = "Currency data for the code %s and the date %s was not found";
 
     public static final String INVALID_PARAMETER_TYPE_MESSAGE = "Invalid parameter type";
+
+    public static final String REQUEST_PARAM_MISSING_MESSAGE = "Request param missing";
 }
