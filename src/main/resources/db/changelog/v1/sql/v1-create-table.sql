@@ -8,4 +8,4 @@ CREATE TABLE currencies
 
 CREATE SEQUENCE primary_key_seq START WITH 1 INCREMENT BY 1;
 
-CREATE INDEX date_code_idx ON currencies(date, code);
+CREATE INDEX code_date_idx ON currencies(code, date);
